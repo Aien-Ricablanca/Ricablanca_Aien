@@ -166,7 +166,7 @@
                 <th>Email</th>
                 <th>Actions</th>
             </tr>
-            <?php foreach (html_escape($users) as $user): ?>
+            <?php foreach (html_escape($index) as $user): ?>
                 <tr>
                     <td><?= $user['id']; ?></td>
                     <td><?= $user['username']; ?></td>
