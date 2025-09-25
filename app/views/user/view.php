@@ -126,7 +126,7 @@
     </div>
     <h1>User List</h1>
     <div class="table-container">
-        <form action="<?=site_url('users');?>" method="get" class="col-sm-4 float-end d-flex">
+        <form action="<?=site_url('user');?>" method="get" class="col-sm-4 float-end d-flex">
 		<?php
 		$q = '';
 		if(isset($_GET['q'])) {
