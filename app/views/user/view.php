@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body {
             font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,31 +113,6 @@
         }
         .action-btn.delete:hover {
             background: #b71c1c;
-        }
-        .pagination {
-            width: 98%;
-            margin: 24px auto 0 auto;
-            text-align: center;
-        }
-        .pagination-btn {
-            padding: 8px 16px;
-            margin: 0 4px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            background: #f2fbf6;
-            color: #219150;
-            transition: background 0.2s, color 0.2s;
-        }
-        .pagination-btn.active {
-            background: #43e97b;
-            color: #fff;
-        }
-        .pagination-btn:hover {
-            background: #219150;
-            color: #fff;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }

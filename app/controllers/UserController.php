@@ -24,7 +24,7 @@ class UserController extends Controller {
             $q = trim($this->io->get('q'));
         }
 
-        $records_per_page = 10;
+        $records_per_page = 6;
 
         $all = $this->UserModel->page($q, $records_per_page, $page);
         $data['index'] = $all['records'];
@@ -36,8 +36,8 @@ class UserController extends Controller {
             'prev_link'      => '← Prev',
             'page_delimiter' => '&page='
         ]);
-        $this->pagination->set_theme('custom'); // or 'tailwind', or 'custom'
-        $this->pagination->initialize($total_rows, $records_per_page, $page, site_url('users').'?q='.$q);
+        $this->pagination->set_theme('bootstrap'); // or 'tailwind', or 'custom'
+       $this->pagination->initialize($total_rows, $records_per_page,$page, site_url('user') . (!empty($q) ? '?q=' . urlencode($q) : ''));
         $data['page'] = $this->pagination->paginate();
         $this->call->view('user/view', $data);  
     }
