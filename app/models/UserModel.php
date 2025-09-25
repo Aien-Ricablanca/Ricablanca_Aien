@@ -17,7 +17,7 @@ class UserModel extends Model {
 
 public function page($q, $records_per_page = null, $page = null) {
             if (is_null($page)) {
-                return $this->db->table('users')->index();
+                return $this->db->table('users')->get_all();
             } else {
                 $query = $this->db->table('users');
                 
